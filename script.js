@@ -10,6 +10,26 @@ var fouls = 0;
 
 $("#shotsTaken").click(function(){
 	numberOfShots++;
-	console.log(numberOfShots);
 	$('#shots').html(numberOfShots);
 });
+
+$("#twoPts").click(function(){
+	numberOfShots++;
+	numberOfTwos++;
+	points = points + 2 ;
+	$('#shots').html(numberOfShots);
+	$('#twoPoints').html(numberOfTwos);
+	$('#points').html(points);
+});
+
+$("#threePts").click(function(){
+	numberOfShots++;
+	numberOfThrees++;
+	points= points + 3;
+	console.log(numberOfShots);
+	$('#shots').html(numberOfShots);
+	$('#threePoints').html(numberOfThrees);
+	$('#points').html(points);
+});
+
+
