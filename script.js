@@ -7,6 +7,8 @@ var rebounds = 0;
 var assists = 0;
 var steals = 0;
 var fouls = 0;
+var freeThrows = 0;
+var freeThrowMade = 0;
 
 $("#shotsTaken").click(function(){
 	numberOfShots++;
@@ -26,10 +28,21 @@ $("#threePts").click(function(){
 	numberOfShots++;
 	numberOfThrees++;
 	points= points + 3;
-	console.log(numberOfShots);
 	$('#shots').html(numberOfShots);
 	$('#threePoints').html(numberOfThrees);
 	$('#points').html(points);
 });
 
+$("#freeThrowsMade").click(function(){
+	freeThrowMade++;
+	freeThrows++;
+	points= points++;
+	$('#missedFreeThrows').html(freeThrows);
+	$('#freeThrowPts').html(freeThrowMade);
+	$('#points').html(points);
+});
+$("#freeThrowsMiss").click(function(){
+	freeThrows++;
+	$('#missedFreeThrows').html(freeThrows);
+});
 
