@@ -45,4 +45,23 @@ $("#freeThrowsMiss").click(function(){
 	freeThrows++;
 	$('#missedFreeThrows').html(freeThrows);
 });
-
+$("#blocks").click(function(){
+	blocks++;
+	$('#bl').html(blocks);
+});
+$("#assists").click(function(){
+	assists++;
+	$('#as').html(assists);
+});
+$("#rebounds").click(function(){
+	rebounds++;
+	$('#rb').html(rebounds);
+});
+$("#steals").click(function(){
+	steals++;
+	$('#st').html(steals);
+});
+$("#fouls").click(function(){
+	fouls++;
+	$('#fl').html(fouls);
+});
