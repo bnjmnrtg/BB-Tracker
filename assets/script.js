@@ -36,7 +36,7 @@ $("#threePts").click(function(){
 $("#freeThrowsMade").click(function(){
 	freeThrowMade++;
 	freeThrows++;
-	points= points++;
+	points++;
 	$('#missedFreeThrows').html(freeThrows);
 	$('#freeThrowPts').html(freeThrowMade);
 	$('#points').html(points);
