@@ -7,8 +7,10 @@ var rebounds = 0;
 var assists = 0;
 var steals = 0;
 var fouls = 0;
+var turnOver = 0;
 var freeThrows = 0;
 var freeThrowMade = 0;
+var shotsMade = 0;
 
 $("#shotsTaken").click(function(){
 	numberOfShots++;
@@ -17,8 +19,10 @@ $("#shotsTaken").click(function(){
 
 $("#twoPts").click(function(){
 	numberOfShots++;
+	shotsMade++;
 	numberOfTwos++;
 	points = points + 2 ;
+	$('#shotsMade').html(shotsMade);
 	$('#shots').html(numberOfShots);
 	$('#twoPoints').html(numberOfTwos);
 	$('#points').html(points);
@@ -26,8 +30,10 @@ $("#twoPts").click(function(){
 
 $("#threePts").click(function(){
 	numberOfShots++;
+	shotsMade++;
 	numberOfThrees++;
 	points= points + 3;
+	$('#shotsMade').html(shotsMade);
 	$('#shots').html(numberOfShots);
 	$('#threePoints').html(numberOfThrees);
 	$('#points').html(points);
@@ -64,4 +70,8 @@ $("#steals").click(function(){
 $("#fouls").click(function(){
 	fouls++;
 	$('#fl').html(fouls);
+});
+$("#turnOver").click(function(){
+	turnOver++;
+	$('#to').html(turnOver);
 });
