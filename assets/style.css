@@ -1,7 +1,24 @@
+body {
+    background: url(./hoop.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
 button{
 	margin-top: 15px;
 	margin-left: 25px;
 	width: 60%;
 	height: 50px;
+}
 
+#title{
+	margin-top: 25px;
+	text-align: center;
+}
+
+.jumbotron{
+	background-color: rgba(0, 0, 0, 0.8);
 }
