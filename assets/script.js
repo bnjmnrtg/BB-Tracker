@@ -75,3 +75,7 @@ $("#turnOver").click(function(){
 	turnOver++;
 	$('#to').html(turnOver);
 });
+
+$(".btn").mouseup(function(){
+    $(this).blur();
+})

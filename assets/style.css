@@ -9,16 +9,28 @@ body {
 
 button{
 	margin-top: 15px;
-	margin-left: 25px;
-	width: 60%;
+	width: 28%;
 	height: 50px;
+}
+
+.container{
+	text-align: center;
 }
 
 #title{
 	margin-top: 25px;
-	text-align: center;
 }
 
 .jumbotron{
 	background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 600px) {
+	button{
+		width: 50%;
+		height: 50px;
+	}
+
+
+
 }
