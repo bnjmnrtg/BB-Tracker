@@ -75,7 +75,9 @@ $("#turnOver").click(function(){
 	turnOver++;
 	$('#to').html(turnOver);
 });
-
-$(".btn").mouseup(function(){
-    $(this).blur();
-})
+// $("#percentage").click(function(){
+// 	var shooting = shotsMade/numberOfShots;
+// 	var freeThrowPercentage= Math.Floor(freeThrowMade/freeThrows);
+// 	$('#sPercent').html(shooting);
+// 	$('#ftPercent').html(freeThrowPercentage);
+// });

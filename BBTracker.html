@@ -22,17 +22,18 @@
         <!-- <div class="row"> -->
             <div class="col-lg-12">
                 <div class="jumbotron" id="buttonKeeper">
-                    <button type="button" class="btn btn-default" id="shotsTaken">Shot Taken</button>
-                    <button type="button" class="btn btn-default" id="twoPts">Two Pointer</button>
-                    <button type="button " class="btn btn-default" id="threePts">Three Pointer</button>
-                    <button type="button " class="btn btn-default" id="rebounds">Rebounds</button>
-                    <button type="button" class="btn btn-default" id="steals">Steals</button>
-                    <button type="button " class="btn btn-default" id="assists">Assits</button>
-                    <button type="button" class="btn btn-default" id="blocks">Blocks</button>
-                    <button type="button " class="btn btn-default" id="fouls">Fouls</button>
-                    <button type="button " class="btn btn-default" id="turnOver">Turn Over</button>
-                    <button type="button" class="btn btn-default" id="freeThrowsMade">Free Throw</button>
-                    <button type="button" class="btn btn-default" id="freeThrowsMiss">Missed Free Throw</button>
+                    <button type="button" class="btn btn-warning" id="shotsTaken">Shot Taken</button>
+                    <button type="button" class="btn btn-success" id="twoPts">Two Pointer</button>
+                    <button type="button " class="btn btn-success" id="threePts">Three Pointer</button>
+                    <button type="button " class="btn btn-primary" id="rebounds">Rebounds</button>
+                    <button type="button" class="btn btn-primary" id="steals">Steals</button>
+                    <button type="button " class="btn btn-primary" id="assists">Assits</button>
+                    <button type="button" class="btn btn-primary" id="blocks">Blocks</button>
+                    <button type="button " class="btn btn-danger" id="fouls">Fouls</button>
+                    <button type="button " class="btn btn-danger" id="turnOver">Turn Over</button>
+                    <button type="button" class="btn btn-success" id="freeThrowsMade">Free Throw</button>
+                    <button type="button" class="btn btn-danger" id="freeThrowsMiss">- Free Throw</button>
+                    <button type="button" class="btn btn-info" id="percentage">%</button>
                 </div>
             </div>
             <div class="col-lg-12">
@@ -40,8 +41,8 @@
                     <div class="col-md-6">
                         <div class="container" id="stats">
                             <h3>Points: <span id="points">00</span></h3>
-                            <h3>Shots Taken: <span id="shotsMade">00</span>/<span id="shots">00</span></h3>
-                            <h3>Free Throws: <span id="freeThrowPts">00</span>/<span id="missedFreeThrows">00</span></h3>
+                            <h3>Shots Taken: <span id="shotsMade">00</span>/<span id="shots">00</span> <span id="sPercent"></span></h3>
+                            <h3>Free Throws: <span id="freeThrowPts">00</span>/<span id="missedFreeThrows">00</span> <span id="ftPercent"></span></h3>
                             <h3>2pts Made: <span id="twoPoints">00</span></h3>
                             <h3>3pts Made: <span id="threePoints">00</span></h3>
                         </div>
