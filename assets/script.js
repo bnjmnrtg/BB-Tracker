@@ -75,9 +75,11 @@ $("#turnOver").click(function(){
 	turnOver++;
 	$('#to').html(turnOver);
 });
-// $("#percentage").click(function(){
-// 	var shooting = shotsMade/numberOfShots;
-// 	var freeThrowPercentage= Math.Floor(freeThrowMade/freeThrows);
-// 	$('#sPercent').html(shooting);
-// 	$('#ftPercent').html(freeThrowPercentage);
-// });
+$("#percentage").click(function(){
+	var shooting = shotsMade/numberOfShots;
+	var freeThrowPercentage= freeThrowMade/freeThrows;
+	var roundedShooting = Math.round(shooting * 100);
+	var roundedFt = Math.round(freeThrowPercentage * 100);
+	$('#sPercent').html(" = " + roundedShooting + "%");
+	$('#ftPercent').html(" = " + roundedFt + "%");
+});
