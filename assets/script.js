@@ -83,3 +83,11 @@ $("#percentage").click(function(){
 	$('#sPercent').html(" = " + roundedShooting + "%");
 	$('#ftPercent').html(" = " + roundedFt + "%");
 });
+
+
+	// console.log(roundedShooting);
+	// console.log(freeThrowPercentage);
+	// console.log(roundedShooting);
+	// console.log(roundedFt);
+
+
