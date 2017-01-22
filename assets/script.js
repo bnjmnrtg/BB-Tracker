@@ -80,8 +80,16 @@ $("#percentage").click(function(){
 	var freeThrowPercentage= freeThrowMade/freeThrows;
 	var roundedShooting = Math.round(shooting * 100);
 	var roundedFt = Math.round(freeThrowPercentage * 100);
-	$('#sPercent').html(" = " + roundedShooting + "%");
-	$('#ftPercent').html(" = " + roundedFt + "%");
+	if (numberOfShots === 0){
+		$('#sPercent').html(" = 0%");
+	}
+	if (freeThrows === 0){
+		$('#ftPercent').html(" = 0%");
+	}
+	else{
+		$('#sPercent').html(" = " + roundedShooting + "%");
+		$('#ftPercent').html(" = " + roundedFt + "%");
+	}
 });
 
 
